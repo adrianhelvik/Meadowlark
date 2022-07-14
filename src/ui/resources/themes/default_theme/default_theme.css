@@ -35,170 +35,216 @@
 
 /* Useful for debugging */
 * {
-    /* border-width: 1px;
+  /* border-width: 1px;
     border-color: #C0C0C0; */
-    color: #C0C0C0;
+  color: #c0c0c0;
 }
 
 /* Background Color Classes */
 
 .level0 {
-    background-color: #0A0A0A;
+  background-color: #0a0a0a;
 }
 
 .level1 {
-    background-color: #0E0E0E;
+  background-color: #0e0e0e;
 }
 
 .level2 {
-    background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
 
 .level3 {
-    background-color: #2C2C2C;
+  background-color: #2c2c2c;
 }
 .level4 {
-    background-color: #3D3D3D;
+  background-color: #3d3d3d;
 }
 
 .level5 {
-    background-color: #525252;
+  background-color: #525252;
 }
 
 .level6 {
-    background-color: #7D7D7D;
+  background-color: #7d7d7d;
 }
 
 /* Font Classes */
 
 .code {
-    font: "fira-code";
-    font-size: 14.0;
+  font: "fira-code";
+  font-size: 14;
 }
 
 .small {
-    font: "min-sans-medium";
-    font-size: 14.0;
-    color: #A3A5A5;
+  font: "min-sans-medium";
+  font-size: 14;
+  color: #a3a5a5;
 }
 
 .body {
-    font: "min-sans-regular";
-    font-size: 18.0;
+  font: "min-sans-regular";
+  font-size: 18;
 }
 
 .subheading {
-    font: "suit-medium";
-    font-size: 24.0;
+  font: "suit-medium";
+  font-size: 24;
 }
 
 .heading {
-    font: "suit-semibold";
-    font-size: 30.0;
+  font: "suit-semibold";
+  font-size: 30;
 }
 
 .subtitle {
-    font: "suit-bold";
-    font-size: 36.0;
+  font: "suit-bold";
+  font-size: 36;
 }
 
 .title {
-    font: "suit-bold";
-    font-size: 54.0;
+  font: "suit-bold";
+  font-size: 54;
 }
 
 .title_light {
-    font: "suit-light";
-    font-size: 54.0;
+  font: "suit-light";
+  font-size: 54;
 }
-
 
 /* Everything Else */
 
 panel {
-    row-between: 1px;
+  row-between: 1px;
 }
 
 .menu_bar {
-    background-color: #1E1E1E;
-    height: 18px;
+  background-color: #1e1e1e;
+  height: 18px;
 }
 
-
 .left_bar {
-    background-color: #2C2C2C;
-    width: 32px;
+  background-color: #2c2c2c;
+  width: 32px;
 }
 
 .browser {
-    min-width: 100px;
-    max-width: 400px;
-    overflow: visible;
+  min-width: 100px;
+  max-width: 400px;
+  overflow: visible;
 }
 
 .header {
-    height: 32px;
-    background-color: #3D3D3D;
-    child-space: 1s;
-    child-left: 10px;
-    child-right: 1s;
-    col-between: 10px;
-    min-width: 0px;
-    min-height: 0px;
+  height: 32px;
+  background-color: #3d3d3d;
+  child-space: 1s;
+  child-left: 10px;
+  child-right: 1s;
+  col-between: 10px;
+  min-width: 0px;
+  min-height: 0px;
 }
 
 .instruments {
-    width: 225px;
-    overflow: visible;
+  width: 225px;
+  overflow: visible;
 }
 
 .patterns {
-    width: 225px;
-    overflow: visible;
+  width: 225px;
+  overflow: visible;
 }
 
 .toolbar {
-    background-color: #393738;
-    height: 32px;
-    space: 0px;
+  background-color: #393738;
+  height: 32px;
+  space: 0px;
 }
 
 .main {
-    row-between: 1px;
+  row-between: 1px;
 }
 
 .main.hidden {
-    row-between: 0px;
+  row-between: 0px;
 }
 
 .piano_roll {
-    height: 1s;
-    transition: height 0.08 0.0;
+  height: 1s;
+  transition: height 0.08 0;
+}
+
+.black_piano_key_wrapper {
+}
+
+.white_piano_key {
+  background-color: #ffffff;
+  border-width: 0.5;
+  border-color: #141112;
+  width: 100;
+  border-top-right-radius: 2;
+  border-bottom-right-radius: 2;
+}
+
+.black_piano_key {
+  background-color: #141112;
+  border-width: 0.5;
+  border-color: #141112;
+  width: 50;
+  border-top-right-radius: 2;
+  border-bottom-right-radius: 2;
+  z-index: 2;
+}
+
+.lane {
+  border-width: 0.5;
+  border-color: #141112;
+  width: 1000;
+}
+
+.white_lane {
+  background-color: #2c2c2c;
+}
+
+.black_lane {
+  background-color: #272525;
+}
+
+.piano_row {
+  border-width: 0.5;
+  border-color: #141112;
+}
+
+.black_piano_row {
+  background-color: #211c1e;
+}
+
+.piano_roll_bottom_padding {
+  height: 17;
 }
 
 .main.hidden > .piano_roll {
-    height: 0s;
-    transition: height 0.08 0.0;
+  height: 0s;
+  transition: height 0.08 0;
 }
 
 .resize_handle {
-    background-color: transparent;
-    transition: background-color 0.1 0.0;
+  background-color: transparent;
+  transition: background-color 0.1 0;
 }
 
 .resize_handle.drag_handle {
-    background-color: #C0C0C0;
-    transition: background-color 0.1 0.0;
+  background-color: #c0c0c0;
+  transition: background-color 0.1 0;
 }
 
 .icon {
-    child-space: 1s;
-    color: #C0C0C0;
+  child-space: 1s;
+  color: #c0c0c0;
 }
 
 button {
-    border-radius: 3px;
-    width: auto;
-    height: auto;
+  border-radius: 3px;
+  width: auto;
+  height: auto;
 }
-
